@@ -46,7 +46,7 @@ export function Hero() {
               className="text-5xl lg:text-7xl text-white leading-tight"
             >
               Building the{" "}
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="text-cyan-400">
                 Future
               </span>{" "}
               with Robotics

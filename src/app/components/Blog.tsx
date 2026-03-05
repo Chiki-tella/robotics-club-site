@@ -101,7 +101,7 @@ export function Blog() {
           </div>
           <h2 className="text-4xl lg:text-5xl text-white mb-6">
             Latest{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="text-cyan-400">
               Articles
             </span>
           </h2>

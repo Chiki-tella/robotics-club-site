@@ -43,7 +43,7 @@ export function JoinCTA() {
               className="text-4xl lg:text-6xl text-white mb-6"
             >
               Join the{" "}
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="text-cyan-400">
                 RCA Robotics Club
               </span>
             </motion.h2>

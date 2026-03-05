@@ -15,39 +15,43 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Autonomous Navigation Robot",
+      title: "OpenAura",
       description:
-        "An intelligent robot capable of navigating complex environments using advanced sensors and computer vision algorithms.",
+        "Why touch a door when you don't have to? In high-traffic public spaces, the simple act of opening a door has become a hidden risk. Standard handles are more than just inconvenient—they're breeding grounds for germs.",
       image:
-        "https://images.unsplash.com/photo-1762968274962-20c12e6e8ecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbm9tb3VzJTIwcm9ib3QlMjBwcm9qZWN0fGVufDF8fHx8MTc3MjY5NTcxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["AI", "Computer Vision", "Sensors"],
+        "https://images.unsplash.com/photo-1558002038-1055907df827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      tags: ["IoT", "Automation", "Health"],
+      date: "13/02/2026",
     },
     {
       id: 2,
-      title: "Smart Aerial Drone",
+      title: "Clap Switch: Acoustic Home Automation",
       description:
-        "A programmable drone with autonomous flight capabilities, GPS navigation, and real-time video streaming.",
+        "Have you ever imagined turning on a light just by clapping your hands? With the integration of a clap switch, it becomes a fun and interactive reality. This innovative device allows you to control lights effortlessly.",
       image:
-        "https://images.unsplash.com/photo-1770411034013-e6cb865ed21a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcm9uZSUyMHRlY2hub2xvZ3klMjBhZXJpYWx8ZW58MXx8fHwxNzcyNjk1NzE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Drones", "IoT", "Automation"],
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      tags: ["Automation", "Smart Home", "Sensors"],
+      date: "08/02/2026",
     },
     {
       id: 3,
-      title: "Line-Following Robot",
+      title: "TrafficInfo",
       description:
-        "A precision-engineered robot that follows lines using infrared sensors, perfect for competitions and learning.",
+        "Self-controlling traffic lights dynamically according to the number of vehicles in each lane.",
       image:
-        "https://images.unsplash.com/photo-1655088651367-f9f4e1328f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMHNlbnNvcnMlMjBlbGVjdHJvbmljcyUyMHByb2plY3R8ZW58MXx8fHwxNzcyNjk1NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Sensors", "Control Systems", "Electronics"],
+        "https://images.unsplash.com/photo-1489824904134-891ab64532f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      tags: ["AI", "Traffic Management", "IoT"],
+      date: "08/02/2026",
     },
     {
       id: 4,
-      title: "AI Vision Recognition System",
+      title: "EchoScout: Autonomous Sonic Navigator",
       description:
-        "A machine learning-powered robot that can identify and classify objects in real-time using neural networks.",
+        "EchoScout is a self-sufficient robotics platform designed to solve the 'white cane' problem through traditional automation. While most basic robots are rendered useless in complex environments.",
       image:
-        "https://images.unsplash.com/photo-1768323275769-6615e7cfcbe4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMGFybSUyMGluZHVzdHJpYWwlMjBhdXRvbWF0aW9ufGVufDF8fHx8MTc3MjY5NTcyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["AI", "Machine Learning", "Deep Learning"],
+        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      tags: ["Robotics", "Autonomous", "Navigation"],
+      date: "04/02/2026",
     },
   ];
 
@@ -71,7 +75,7 @@ export function Projects() {
           </div>
           <h2 className="text-4xl lg:text-5xl text-white mb-6">
             Our{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="text-cyan-400">
               Projects
             </span>
           </h2>
@@ -103,15 +107,18 @@ export function Projects() {
 
               {/* Content */}
               <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-xs text-cyan-400"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-xs text-cyan-400"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="text-xs text-gray-500">{project.date}</span>
                 </div>
 
                 <h3 className="text-2xl text-white mb-3 group-hover:text-cyan-400 transition-colors">

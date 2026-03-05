@@ -6,47 +6,47 @@ export function Team() {
   const members = [
     {
       id: 1,
-      name: "Sarah Chen",
+      name: "Muhumure Bonheur",
       role: "Club President",
       description: "Leading the club with passion for robotics and AI innovation",
-      image:
-        "https://images.unsplash.com/photo-1763673375520-c5562a39a2c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGZlbWFsZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzcyNjk1NzIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    },
-    {
-      id: 2,
-      name: "Marcus Johnson",
-      role: "Robotics Engineer",
-      description: "Specializing in mechanical design and embedded systems",
       image:
         "https://images.unsplash.com/photo-1686543971025-15aa01b5f7c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMG1hbGUlMjBwcm9ncmFtbWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzcyNjk1NzIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      id: 3,
-      name: "Emily Rodriguez",
-      role: "AI Developer",
-      description: "Expert in machine learning and computer vision systems",
-      image:
-        "https://images.unsplash.com/photo-1758685848521-ff7e4d136384?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGVuZ2luZWVyJTIwcG9ydHJhaXQlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3MjY5NTcyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    },
-    {
-      id: 4,
-      name: "Alex Kim",
-      role: "Hardware Engineer",
-      description: "Building circuit boards and sensor integration systems",
+      id: 2,
+      name: "Zigirumugabe Louis Miguel",
+      role: "Vice President",
+      description: "Specializing in mechanical design and embedded systems",
       image:
         "https://images.unsplash.com/photo-1612014206380-b282e27ebb7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0JTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzI2OTU3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      id: 5,
-      name: "Jordan Lee",
-      role: "Software Lead",
-      description: "Developing control algorithms and automation software",
+      id: 3,
+      name: "Niyobyose Isaac Precieux",
+      role: "Technical Lead",
+      description: "Expert in robotics systems and project coordination",
       image:
         "https://images.unsplash.com/photo-1770922809545-edc679cdf6d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwcG9ydHJhaXQlMjBhY2FkZW1pYyUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzI2OTU3Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
+      id: 4,
+      name: "Nshuti Mulindwa Christian",
+      role: "Hardware Engineer",
+      description: "Building circuit boards and sensor integration systems",
+      image:
+        "https://images.unsplash.com/photo-1763673375520-c5562a39a2c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGZlbWFsZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzcyNjk1NzIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    },
+    {
+      id: 5,
+      name: "Kayinamura Geoffrey",
+      role: "Software Lead",
+      description: "Developing control algorithms and automation software",
+      image:
+        "https://images.unsplash.com/photo-1758685848521-ff7e4d136384?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGVuZ2luZWVyJTIwcG9ydHJhaXQlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3MjY5NTcyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    },
+    {
       id: 6,
-      name: "Priya Patel",
+      name: "Igihozo Belise",
       role: "Systems Integration",
       description: "Ensuring all components work together seamlessly",
       image:
@@ -74,7 +74,7 @@ export function Team() {
           </div>
           <h2 className="text-4xl lg:text-5xl text-white mb-6">
             Our{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="text-cyan-400">
               Leadership
             </span>
           </h2>
