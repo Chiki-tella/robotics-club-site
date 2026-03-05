@@ -98,7 +98,7 @@ export function BlogArticleDialog({ open, onOpenChange, article }: BlogArticleDi
               <p className="text-gray-300 mb-4">
                 Join RCA Robotics Club to access exclusive tutorials, workshops, and hands-on projects.
               </p>
-              <button className="px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-colors font-semibold shadow-lg shadow-blue-500/30">
+              <button className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-colors">
                 Join the Club
               </button>
             </div>

@@ -75,11 +75,11 @@ export function Hero() {
                 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg flex items-center justify-center space-x-2 group relative overflow-hidden shadow-lg shadow-blue-500/50"
+                className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg flex items-center justify-center space-x-2 group relative overflow-hidden"
               >
                 <span className="relative z-10 font-semibold">Explore Projects</span>
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" />
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.button>
 
               <motion.button
@@ -89,7 +89,7 @@ export function Hero() {
                 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white/10 border-2 border-blue-500 text-white rounded-lg hover:bg-blue-500/20 transition-colors backdrop-blur-sm"
+                className="px-8 py-4 bg-white/5 border border-cyan-500/30 text-white rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm"
               >
                 Join the Club
               </motion.button>
