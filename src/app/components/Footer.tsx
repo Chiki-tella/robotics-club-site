@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Github, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Github, Twitter, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   const footerLinks = {
@@ -124,27 +124,29 @@ export function Footer() {
               <li className="flex items-start space-x-3 text-gray-400">
                 <MapPin className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
                 <span>
-                  123 Innovation Drive
+                  Nyabihu, Mukamira, RCA
                   <br />
-                  Tech City, TC 12345
+                  Rwanda
                 </span>
               </li>
               <li className="flex items-center space-x-3 text-gray-400">
                 <Mail className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                 <a
-                  href="mailto:info@rcarobotics.com"
+                  href="mailto:robotic.club@rca.ac.rw"
                   className="hover:text-cyan-400 transition-colors"
                 >
-                  info@rcarobotics.com
+                  robotic.club@rca.ac.rw
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-gray-400">
-                <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                <Github className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                 <a
-                  href="tel:+15551234567"
+                  href="https://github.com/ROBOTICS-CLUB1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-cyan-400 transition-colors"
                 >
-                  (555) 123-4567
+                  ROBOTICS-CLUB1
                 </a>
               </li>
             </ul>
