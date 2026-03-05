@@ -6,7 +6,7 @@ export function Team() {
   const members = [
     {
       id: 1,
-      name: "Muhumure Bonheur",
+      name: "Muhumure Bonheur Christian",
       role: "Club President",
       description: "Leading the club with passion for robotics and AI innovation",
       image:
@@ -22,8 +22,8 @@ export function Team() {
     },
     {
       id: 3,
-      name: "Niyobyose Isaac Precieux",
-      role: "Technical Lead",
+      name: "Igihozo Belise",
+      role: "Systems Integration",
       description: "Expert in robotics systems and project coordination",
       image:
         "https://images.unsplash.com/photo-1770922809545-edc679cdf6d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwcG9ydHJhaXQlMjBhY2FkZW1pYyUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzI2OTU3Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -46,8 +46,8 @@ export function Team() {
     },
     {
       id: 6,
-      name: "Igihozo Belise",
-      role: "Systems Integration",
+      name: "Niyobyose Isaac Precieux",
+      role: "Technical Lead",
       description: "Ensuring all components work together seamlessly",
       image:
         "https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlciUyMHBvcnRyYWl0JTIwdGVjaCUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzI2OTU3Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -75,7 +75,7 @@ export function Team() {
           <h2 className="text-4xl lg:text-5xl text-white mb-6">
             Our{" "}
             <span className="text-cyan-400">
-              Leadership
+              Team
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">

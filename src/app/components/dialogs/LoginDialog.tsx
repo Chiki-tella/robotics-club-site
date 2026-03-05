@@ -4,6 +4,7 @@ import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import { X } from "lucide-react";
+import { useNavigate } from "react-router";
 
 interface LoginDialogProps {
   open: boolean;
@@ -13,12 +14,19 @@ interface LoginDialogProps {
 export function LoginDialog({ open, onOpenChange }: LoginDialogProps) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log("Login:", { email, password });
-    onOpenChange(false);
+    
+    // Simple admin check (replace with actual authentication)
+    if (email === "admin@rca.ac.rw" && password === "admin123") {
+      localStorage.setItem("isAdmin", "true");
+      onOpenChange(false);
+      navigate("/admin");
+    } else {
+      alert("Invalid credentials");
+    }
   };
 
   return (
