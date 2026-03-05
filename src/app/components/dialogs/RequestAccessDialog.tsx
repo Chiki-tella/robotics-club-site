@@ -123,7 +123,7 @@ export function RequestAccessDialog({ open, onOpenChange }: RequestAccessDialogP
           </div>
           <Button
             type="submit"
-            className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white"
+            className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold shadow-lg shadow-blue-500/30"
           >
             Submit Application
           </Button>

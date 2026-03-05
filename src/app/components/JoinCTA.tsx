@@ -79,13 +79,10 @@ export function JoinCTA() {
                 onClick={() => setIsRequestAccessOpen(true)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl text-lg relative overflow-hidden group"
+                className="px-10 py-5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl text-lg font-semibold relative overflow-hidden group shadow-lg shadow-blue-500/50"
               >
                 <span className="relative z-10">Request Access</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-0 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute inset-0 bg-cyan-400/30 blur-xl" />
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.button>
 
               <motion.button
@@ -95,7 +92,7 @@ export function JoinCTA() {
                 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-10 py-5 bg-white/5 border border-cyan-500/30 text-white rounded-xl text-lg hover:bg-white/10 transition-colors backdrop-blur-sm"
+                className="px-10 py-5 bg-white/10 border-2 border-blue-500 text-white rounded-xl text-lg hover:bg-blue-500/20 transition-colors backdrop-blur-sm"
               >
                 Learn More
               </motion.button>
@@ -107,26 +104,38 @@ export function JoinCTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
-              className="grid md:grid-cols-3 gap-6 mt-12 pt-12 border-t border-cyan-500/20"
+              className="grid md:grid-cols-3 gap-6 mt-12 pt-12 border-t border-blue-500/30"
             >
               <div className="space-y-2">
-                <div className="text-3xl text-cyan-400">🤖</div>
-                <div className="text-white">Hands-On Projects</div>
-                <div className="text-sm text-gray-400">
+                <div className="w-12 h-12 bg-blue-600/20 border-2 border-blue-500 rounded-lg flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </div>
+                <div className="text-white font-semibold text-lg">Hands-On Projects</div>
+                <div className="text-sm text-gray-300">
                   Build real robots and systems
                 </div>
               </div>
               <div className="space-y-2">
-                <div className="text-3xl text-cyan-400">🏆</div>
-                <div className="text-white">Competitions</div>
-                <div className="text-sm text-gray-400">
+                <div className="w-12 h-12 bg-blue-600/20 border-2 border-blue-500 rounded-lg flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <div className="text-white font-semibold text-lg">Competitions</div>
+                <div className="text-sm text-gray-300">
                   Compete at regional and national levels
                 </div>
               </div>
               <div className="space-y-2">
-                <div className="text-3xl text-cyan-400">🎓</div>
-                <div className="text-white">Mentorship</div>
-                <div className="text-sm text-gray-400">
+                <div className="w-12 h-12 bg-blue-600/20 border-2 border-blue-500 rounded-lg flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                </div>
+                <div className="text-white font-semibold text-lg">Mentorship</div>
+                <div className="text-sm text-gray-300">
                   Learn from experienced engineers
                 </div>
               </div>

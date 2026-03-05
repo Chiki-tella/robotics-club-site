@@ -1,8 +1,17 @@
+import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, Clock } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { BlogArticleDialog } from "./dialogs/BlogArticleDialog";
 
 export function Blog() {
+  const [selectedArticle, setSelectedArticle] = useState<typeof articles[0] | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const handleReadArticle = (article: typeof articles[0]) => {
+    setSelectedArticle(article);
+    setIsDialogOpen(true);
+  };
   const articles = [
     {
       id: 1,
@@ -147,6 +156,7 @@ export function Blog() {
                 </p>
 
                 <motion.button
+                  onClick={() => handleReadArticle(article)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors group/btn"
@@ -180,6 +190,12 @@ export function Blog() {
           </motion.button>
         </motion.div>
       </div>
+
+      <BlogArticleDialog 
+        open={isDialogOpen} 
+        onOpenChange={setIsDialogOpen} 
+        article={selectedArticle}
+      />
     </section>
   );
 }

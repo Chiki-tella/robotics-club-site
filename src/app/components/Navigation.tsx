@@ -90,13 +90,10 @@ export function Navigation() {
               onClick={() => setIsRequestAccessOpen(true)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg relative overflow-hidden group"
+              className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-semibold relative overflow-hidden group shadow-lg shadow-blue-500/30"
             >
               <span className="relative z-10">Request Access</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute inset-0 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute inset-0 bg-cyan-400/30 blur-xl" />
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.button>
           </div>
 
@@ -138,7 +135,7 @@ export function Navigation() {
             </button>
             <button 
               onClick={() => setIsRequestAccessOpen(true)}
-              className="block w-full px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg text-center"
+              className="block w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg text-center font-semibold shadow-lg shadow-blue-500/30"
             >
               Request Access
             </button>

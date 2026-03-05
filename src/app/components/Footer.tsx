@@ -52,9 +52,11 @@ export function Footer() {
               viewport={{ once: true }}
               className="flex items-center space-x-2 mb-4"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white text-xl">⚡</span>
-              </div>
+              <img 
+                src="/robotics_club_dark.png" 
+                alt="RCA Robotics Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-xl font-black text-white">
                 RCA <span className="text-cyan-400">Robotics</span>
               </span>
